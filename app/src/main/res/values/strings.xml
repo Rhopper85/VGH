@@ -12,4 +12,71 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="desc">Everything you ever wanted to know about the evolution of video game systems</string>
 
+
+    <string-array name="sample_array">
+        <item>Item 1</item>
+        <item>Item 2</item>
+        <item>Item 3</item>
+        <item>Item 4</item>
+        <item>Item 5</item>
+        <item>Item 6</item>
+        <item>Item 7</item>
+        <item>Item 8</item>
+        <item>Item 9</item>
+    </string-array>
+
+    <string-array name="con_70">
+        <item>Magnavox Odyssey</item>
+        <item>Magnavox Odyssey 100</item>
+        <item>Magnavox Odyssey 200</item>
+        <item>Pong</item>
+        <item>Fairchild Channel-F</item>
+        <item>Magnavox Odyssey 300</item>
+        <item>Magnavox Odyssey 400</item>
+        <item>Magnavox Odyssey 500</item>
+        <item>Atari VCS 2600</item>
+        <item>Nintendo Color TV Game</item>
+        <item>Magnavox Odyssey 2000</item>
+        <item>Magnavox Odyssey 3000</item>
+        <item>Magnavox Odyssey 4000</item>
+        <item>Magnavox Odyssey 2</item>
+        <item>Mattel Intellivision</item>
+    </string-array>
+
+    <string-array name="con_80">
+        <item>Colecovision</item>
+        <item>Atari 5200 Supersystem</item>
+        <item>Coleco Gemini</item>
+        <item>Nintendo Entertainment System</item>
+        <item>Sega Master System</item>
+        <item>Atari 7800 Prosystem</item>
+        <item>NEC TurboGrafx-16</item>
+    </string-array>
+
+    <string-array name="con_90">
+        <item>SNK NeoGeo</item>
+        <item>Super Nintendo Entertainment System</item>
+        <item>Atari Jaguar</item>
+        <item>Sega Saturn</item>
+        <item>Nintendo Virtualboy</item>
+        <item>Sony Playstation</item>
+        <item>Nintendo 64</item>
+        <item>Sega Dreamcast</item>
+    </string-array>
+
+    <string-array name="con_00">
+        <item>Sony Playstation 2</item>
+        <item>Microsoft XBOX</item>
+        <item>Nintendo Gamecube</item>
+        <item>Microsoft XBOX 360</item>
+        <item>Sony Playstation 3</item>
+        <item>"Nintendo Wii</item>
+    </string-array>
+
+    <string-array name="con_10">
+        <item>Nintendo Wii U</item>
+        <item>Sony Playstation 4</item>
+        <item>Microsoft XBOX One</item>
+    </string-array>
+
 </resources>

@@ -9,21 +9,26 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-public class Con_80s extends ListFragment {
-    //This is just a plain list fragment that shows your items...
-    // You'll want to change the data expressed
+/**
+ * Created by Rufflez on 11/21/2014.
+ */
+public class Han_10s extends ListFragment {
 
     @Override
+    public void onCreate(Bundle savedInstanceState){
+        super.onCreate(savedInstanceState);
+    }
+
+
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
-        View v = inflater.inflate(R.layout.fragment_main, container, false);
-        String[] items = getResources().getStringArray(R.array.con_80);
-        setListAdapter(new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, items));
-        return v;
+        View rootView = inflater.inflate(R.layout.fragment_main, container, false);
+        String[] strings = getResources().getStringArray(R.array.sample_array);
+        setListAdapter(new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, strings));
+        return rootView;
     }
 
     @Override
     public void onListItemClick(ListView l, View v, int position, long id){
         Toast.makeText(getActivity(), "You selected " + position, Toast.LENGTH_LONG).show();
     }
-
 }

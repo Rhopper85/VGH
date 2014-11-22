@@ -1,9 +1,10 @@
 <resources>
 
     <style name="AppTheme" parent="Base.Theme.AppCompat">
-    <item name="windowActionBar">false</item>
-    <item name="colorPrimary">@color/colorPrimary</item>
-    <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="windowActionBar">false</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="android:textColor">#ff6b6b6b</item>
     </style>
 
     <style name="AppTheme.Base" parent="Theme.AppCompat">
@@ -18,6 +19,13 @@
     <style name="DrawerArrowStyle" parent="Widget.AppCompat.DrawerArrowToggle">
         <item name="spinBars">true</item>
         <item name="color">@android:color/white</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="ToolbarTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:textColorPrimary">#ffffff</item>
+        <item name="actionMenuTextColor">#ffffff</item>
+        <item name="android:textColorSecondary">#ffffff</item>
     </style>
 
 

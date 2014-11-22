@@ -10,12 +10,15 @@ import android.view.ViewGroup;
 
 import com.astuetz.PagerSlidingTabStrip;
 
-public class PagerTabStripFragment extends Fragment {
+/**
+ * Created by Rufflez on 11/21/2014.
+ */
+public class HandheldPagerTabStripFragment extends Fragment {
 
-    public static final String TAG = PagerTabStripFragment.class.getSimpleName();
+    public static final String TAG = HandheldPagerTabStripFragment.class.getSimpleName();
 
-    public static PagerTabStripFragment newInstance() {
-        return new PagerTabStripFragment();
+    public static HandheldPagerTabStripFragment newInstance() {
+        return new HandheldPagerTabStripFragment();
     }
 
     @Override
@@ -67,19 +70,18 @@ public class PagerTabStripFragment extends Fragment {
         public Fragment getItem(int position) {
             switch (position) {
                 case 0:
-                    return Con_70s.newInstance(0);
+                    return new Han_70s();
                 case 1:
-                    return Con_80s.newInstance(1);
+                    return new Han_80s();
                 case 2:
-                    return Con_90s.newInstance(2);
+                    return new Han_90s();
                 case 3:
-                    return Con_00s.newInstance(3);
+                    return new Han_00s();
                 case 4:
-                    return Con_10s.newInstance(4);
+                    return new Han_10s();
                 default:
                     return null;
             }
         }
     }
 }
-

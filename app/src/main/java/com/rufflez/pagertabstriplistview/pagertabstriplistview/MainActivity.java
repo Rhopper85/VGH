@@ -10,7 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
-
+import android.widget.Toast;
 
 public class MainActivity extends ActionBarActivity {
 
@@ -66,7 +66,10 @@ public class MainActivity extends ActionBarActivity {
 
         mDrawerToggle.syncState();
         //This is called so we select the first item in the drawer list by default
-        selectItem(0);
+        if (savedInstanceState == null){
+            selectItem(0);
+        }
+
         //This is called so we set the default Actionbar title to our first item
         getSupportActionBar().setTitle(drawerListItems[0]);
     }
@@ -123,24 +126,25 @@ public class MainActivity extends ActionBarActivity {
             case 0:
                 getSupportFragmentManager()
                         .beginTransaction()
-                        .add(R.id.container,
-                                PagerTabStripFragment.newInstance(),
-                                PagerTabStripFragment.TAG).commit();
+                        .replace(R.id.container,
+                                ConsolePagerTabStripFragment.newInstance(),
+                                ConsolePagerTabStripFragment.TAG).commit();
                 break;
 
             case 1:
                 getSupportFragmentManager()
                         .beginTransaction()
-                        .add(R.id.container,
-                                PagerTabStripFragment.newInstance(),
-                                PagerTabStripFragment.TAG).commit();
+                        .replace(R.id.container,
+                                HandheldPagerTabStripFragment.newInstance(),
+                                ConsolePagerTabStripFragment.TAG).commit();
                 break;
             case 2:
                 getSupportFragmentManager()
                         .beginTransaction()
-                        .add(R.id.container,
-                                PagerTabStripFragment.newInstance(),
-                                PagerTabStripFragment.TAG).commit();
+                        .replace(R.id.container,
+                                new AboutFragment()).addToBackStack(null).commit();
+
+                Toast.makeText(this, "You selected About", Toast.LENGTH_LONG).show();
                 break;
         }
 
