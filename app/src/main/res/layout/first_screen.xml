@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img_logo"
+        android:src="@drawable/logo2"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/img_title"
+        android:layout_centerVertical="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="230dp"
+        />
+
+    <TextView
+        android:visibility="visible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Everything you ever wanted to know about the evolution of video game systems"
+        android:id="@+id/description"
+        android:textColor="#ffffffff"
+        android:textSize="24sp"
+        android:typeface="sans"
+        android:gravity="center"
+        android:layout_marginTop="375dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textStyle="italic" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_start"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/start"
+        android:background="@null"
+        android:layout_marginBottom="16dp" />
+
+
+</RelativeLayout>

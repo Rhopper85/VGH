@@ -1,0 +1,1 @@
+include ':app', ':pager_sliding_tab_strip_library'
