@@ -1,5 +1,6 @@
 package com.rufflez.pagertabstriplistview.pagertabstriplistview;
 
+import android.content.pm.ActivityInfo;
 import android.content.res.Configuration;
 import android.os.Bundle;
 import android.support.v4.widget.DrawerLayout;
@@ -124,6 +125,7 @@ public class MainActivity extends ActionBarActivity {
         */
         switch (position) {
             case 0:
+                setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR);
                 getSupportFragmentManager()
                         .beginTransaction()
                         .replace(R.id.container,
@@ -132,6 +134,7 @@ public class MainActivity extends ActionBarActivity {
                 break;
 
             case 1:
+                setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_SENSOR);
                 getSupportFragmentManager()
                         .beginTransaction()
                         .replace(R.id.container,
@@ -139,12 +142,13 @@ public class MainActivity extends ActionBarActivity {
                                 ConsolePagerTabStripFragment.TAG).commit();
                 break;
             case 2:
+                setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_NOSENSOR);
                 getSupportFragmentManager()
                         .beginTransaction()
                         .replace(R.id.container,
                                 new AboutFragment()).addToBackStack(null).commit();
 
-                Toast.makeText(this, "You selected About", Toast.LENGTH_LONG).show();
+                //Toast.makeText(this, "You selected About", Toast.LENGTH_LONG).show();
                 break;
         }
 

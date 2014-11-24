@@ -11,18 +11,51 @@
     <string name="action_settings">Settings</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="desc">Everything you ever wanted to know about the evolution of video game systems</string>
+    <string name="version">Version: Alpha 1.2</string>
+    <string name="terms">"http://www.tinytowergames.com/privacy.html"</string>
 
 
-    <string-array name="sample_array">
-        <item>Item 1</item>
-        <item>Item 2</item>
-        <item>Item 3</item>
-        <item>Item 4</item>
-        <item>Item 5</item>
-        <item>Item 6</item>
-        <item>Item 7</item>
-        <item>Item 8</item>
-        <item>Item 9</item>
+    <string-array name="han_70">
+        <item>MB Microvision</item>
+    </string-array>
+
+    <string-array name="han_80">
+        <item>Atari Lynx</item>
+        <item>Nintendo Gameboy</item>
+    </string-array>
+
+    <string-array name="han_90">
+        <item>NEC TurboExpress</item>
+        <item>Sega GameGear</item>
+        <item>Watara Supervision</item>
+        <item>Sega Nomad</item>
+        <item>Nintendo Gameboy Pocket</item>
+        <item>Tiger Game.com</item>
+        <item>Nintendo Gameboy Color</item>
+        <item>SNK NeoGeo Pocket Color</item>
+    </string-array>
+
+    <string-array name="han_00">
+        <item>Bandai WonderSwan Color</item>
+        <item>Nintendo Gameboy Advance</item>
+        <item>NGage</item>
+        <item>Nintendo Gameboy Advance SP</item>
+        <item>Nintendo DS</item>
+        <item>Nintendo Gameboy Micro</item>
+        <item>Sony Playstation Portable</item>
+        <item>Tiger Gizmondo</item>
+        <item>Nintendo DS Lite</item>
+        <item>Nintendo DSi</item>
+        <item>Sony Playstation Portable Go</item>
+    </string-array>
+
+    <string-array name="han_10">
+        <item>Nintendo DSi XL</item>
+        <item>Nintendo 3DS</item>
+        <item>Sony Playstation Portable Vita</item>
+        <item>Nintendo 3DS XL</item>
+        <item>NVidia Shield</item>
+        <item>Nintendo 2DS</item>
     </string-array>
 
     <string-array name="con_70">
@@ -78,5 +111,12 @@
         <item>Sony Playstation 4</item>
         <item>Microsoft XBOX One</item>
     </string-array>
+
+    <string name="change_log">
+        Changelog:\n
+        ver 1.2 - fixed menu system
+    </string>
+
+
 
 </resources>

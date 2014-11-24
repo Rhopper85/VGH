@@ -10,9 +10,6 @@ import android.view.ViewGroup;
 
 import com.astuetz.PagerSlidingTabStrip;
 
-/**
- * Created by Rufflez on 11/21/2014.
- */
 public class HandheldPagerTabStripFragment extends Fragment {
 
     public static final String TAG = HandheldPagerTabStripFragment.class.getSimpleName();

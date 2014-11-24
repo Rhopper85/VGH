@@ -9,9 +9,6 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-/**
- * Created by Rufflez on 11/21/2014.
- */
 public class Han_70s extends ListFragment {
 
     @Override
@@ -21,7 +18,7 @@ public class Han_70s extends ListFragment {
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
         View rootView = inflater.inflate(R.layout.fragment_main, container, false);
-        String[] strings = getResources().getStringArray(R.array.sample_array);
+        String[] strings = getResources().getStringArray(R.array.han_70);
         setListAdapter(new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, strings));
         return rootView;
     }

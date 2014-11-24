@@ -17,7 +17,7 @@ public class Han_90s extends ListFragment {
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
         View rootView = inflater.inflate(R.layout.fragment_main, container, false);
-        String[] strings = getResources().getStringArray(R.array.sample_array);
+        String[] strings = getResources().getStringArray(R.array.han_90);
         setListAdapter(new ArrayAdapter<String>(getActivity(), android.R.layout.simple_list_item_1, strings));
         return rootView;
     }

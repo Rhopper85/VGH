@@ -13,7 +13,6 @@ public class Con_70s extends ListFragment {
     //This is just a plain list fragment that shows your items...
     // You'll want to change the data expressed
 
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState){
         View v = inflater.inflate(R.layout.fragment_main, container, false);
