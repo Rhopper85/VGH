@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
+
 public class Con_70s extends ListFragment {
     //This is just a plain list fragment that shows your items...
     // You'll want to change the data expressed
@@ -22,10 +23,18 @@ public class Con_70s extends ListFragment {
     }
 
     @Override
-    public void onListItemClick(ListView l, View v, int position, long id){
-        Intent i = new Intent(v.getContext(), DataPage.class);
+    public void onListItemClick(ListView l, View v, int position, long id) {
+        Class c = null;
+        switch (position) {
+            case 0:
+                c = Con_Odyssey.class;
+                break;
+            case 1:
+                c = Con_Odyssey_100.class;
+                break;
+        }
+        Intent i = new Intent(v.getContext(), c);
         startActivity(i);
-        //Toast.makeText(getActivity(), "You selected " + position, Toast.LENGTH_LONG).show();
+        //Toast.makeText(getActivity(), "You Selected " + position, Toast.LENGTH_LONG).show();
     }
-
 }

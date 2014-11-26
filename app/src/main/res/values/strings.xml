@@ -116,7 +116,7 @@
         Changelog:\n
         ver 1.2 - fixed menu system
     </string>
-
+    <string name="odyssey_image">odyssey_image</string>
 
 
 </resources>
